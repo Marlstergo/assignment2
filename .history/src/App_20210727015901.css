@@ -1,0 +1,85 @@
+.container {
+  width: 100%;
+  /* padding-left: 1.5rem;
+  padding-right: 1.5rem; */
+}
+
+@media screen and (min-width: 640px) {
+  .container {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+    /* padding-left: 4rem;
+    padding-right: 4rem; */
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    /* padding-left: 5rem;
+    padding-right: 5rem; */
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
+.full {
+  display: grid;
+  grid-template-columns: repeat(9, minmax(0, 1fr));
+}
+
+.sidebar {
+  grid-column: span 2 / span 2;
+}
+
+.main-view{
+  grid-column: span 7 / span 7;
+}
+
+.row{
+  display: flex;
+  /* overflow-x: scroll; */
+  
+}
+
+.hero{
+  margin: 0 50px;
+  display: grid;
+  grid-template-columns: repeat(9, minmax(0, 1fr));
+
+}
+.paragraph{
+  grid-column: span 4 / span 4;
+}
+
+.title{
+  grid-column: span 5 / span 5;
+  font-size: 2rem;
+
+}
+
+h1{
+  margin: 0;
+}
+
+.cell{
+  margin-left: 40px;
+}
+
+
