@@ -174,9 +174,6 @@ img {
   text-decoration: underline;
   text-decoration: rgb(255, 78, 78);
 }
-.mobile-menu{
-  display:none;
-}
 
 @media screen and (max-width: 480px) {
   .main-view {
@@ -196,10 +193,9 @@ img {
   .row {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 30px 10px;
+    gap: 10px;
     padding: 20px 20px;
   }
-
   .paragraph2{
     padding: 0 40px ;
     margin-top: 15px;
@@ -207,34 +203,10 @@ img {
   .taco{
     display: none;
   }
-  .cont{
-    width: 100vw;
-  }
-  .mobile-menu{
-    display:flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0px;
-  }
-}
-.shop{
-  margin: 0 20px;
-  color: red;
-
-
-}
-.menu{
-  margin: 0 20px;
-  color: red;
-
 }
 @media screen and (min-width: 481px) {
   .sidebar{
     display: block;
-  }
-  .cont{
-    display: none;
   }
   .paragraph2{
     display: none;
@@ -242,12 +214,3 @@ img {
 }
 
 
-.menu-items{
-  position: absolute;
-  bottom: 0px;
-  background-color: white;
-  width: 60vw;
-  padding-left: 30px;
-  padding-bottom: 40px;
-  height: 80vh;
-}

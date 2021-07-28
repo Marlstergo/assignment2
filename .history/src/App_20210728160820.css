@@ -244,10 +244,8 @@ img {
 
 .menu-items{
   position: absolute;
-  bottom: 0px;
+  bottom: 2;
   background-color: white;
-  width: 60vw;
+  width: 75vw;
   padding-left: 30px;
-  padding-bottom: 40px;
-  height: 80vh;
 }

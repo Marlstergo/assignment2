@@ -1,69 +1,21 @@
 import logo from "./logo.svg";
 import "./App.css";
-import { Menu, Transition } from "@headlessui/react";
 
 import Nachos from "./asset/nachos.png";
 import Taco from "./asset/taco.png";
 import Noodles from "./asset/noodles.png";
 import Pizza from "./asset/pizza.png";
 import Chicken from "./asset/chicken.png";
-import { MenuAlt2, ShoppingCart, X } from "heroicons-react";
+import { MenuAlt2, ShoppingCart } from 'heroicons-react'
 
 function App() {
   return (
     <div className="">
       <div className="full">
-        <div className="cont">
-          <div className="mobile-menu">
-            <Menu>
-              {({ open }) => (
-                <>
-                  {open? <X className="menu"/> : <Menu.Button as="div" className=" md:hidden block z-50">
-                    <MenuAlt2 className="menu" />
-                  </Menu.Button>}
-                  {/* <Transition
-                    enter="transition duration-100 ease-out"
-                    enterFrom="transform scale-95 opacity-0"
-                    enterTo="transform scale-100 opacity-100"
-                    leave="transition duration-75 ease-out"
-                    leaveFrom="transform scale-100 opacity-100"
-                    leaveTo="transform scale-95 opacity-0"
-                  > */}
-                  <Menu.Items
-                    as="div"
-                    className="menu-items"
-                    // className="md:hidden z-50 h-[100vh] w-[100vw] flex-col -top-5 text-xl left-0 absolute bg-white flex justify-center pl-[24px] space-y-8 z-40 bg-white border-themegreen rounded-tl-[50px] border-8 outline-none"
-                  >
-                    <Menu.Item as="div" className="item">
-                      <h2 id="currnet">About</h2>
-                    </Menu.Item>
-                    <Menu.Item as="div" className="item">
-                      <h2 >Services</h2>
-                    </Menu.Item>
-                    <Menu.Item as="div" className="item">
-                      <h2 >Cousine</h2>
-                    </Menu.Item>
-                    <Menu.Item as="div" className="item">
-                      <h2 >Gallery</h2>
-                    </Menu.Item>
-                    <Menu.Item as="div" className="item">
-                      <h2>Contact</h2>
-                    </Menu.Item>
-                    <Menu.Item as="div" className="item">
-                      <h2>Book</h2>
-                    </Menu.Item>
-                    <Menu.Item as="div" className="item">
-                      <button className="button">Cart</button>
-                    </Menu.Item>
-                  </Menu.Items>
-                  {/* </Transition> */}
-                </>
-              )}
-            </Menu>
-
-            <h1 className="mobile-header">Lorem</h1>
-            <ShoppingCart className="shop" />
-          </div>
+        <div className="mobile-menu">
+          <MenuAlt2/>
+          <h1 className="mobile-header">Lorem</h1>
+          <ShoppingCart/>
         </div>
         <div className="sidebar">
           <div className="logo">

@@ -7,7 +7,7 @@ import Taco from "./asset/taco.png";
 import Noodles from "./asset/noodles.png";
 import Pizza from "./asset/pizza.png";
 import Chicken from "./asset/chicken.png";
-import { MenuAlt2, ShoppingCart, X } from "heroicons-react";
+import { MenuAlt2, ShoppingCart } from "heroicons-react";
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
             <Menu>
               {({ open }) => (
                 <>
-                  {open? <X className="menu"/> : <Menu.Button as="div" className=" md:hidden block z-50">
+                  {open? null: <Menu.Button as="div" className=" md:hidden block z-50">
                     <MenuAlt2 className="menu" />
                   </Menu.Button>}
                   {/* <Transition
@@ -38,19 +38,19 @@ function App() {
                       <h2 id="currnet">About</h2>
                     </Menu.Item>
                     <Menu.Item as="div" className="item">
-                      <h2 >Services</h2>
+                      <h2 id="currnet">Services</h2>
                     </Menu.Item>
                     <Menu.Item as="div" className="item">
-                      <h2 >Cousine</h2>
+                      <h2 id="currnet">Cousine</h2>
                     </Menu.Item>
                     <Menu.Item as="div" className="item">
-                      <h2 >Gallery</h2>
+                      <h2 id="currnet">Gallery</h2>
                     </Menu.Item>
                     <Menu.Item as="div" className="item">
-                      <h2>Contact</h2>
+                      <h2 id="currnet">Contact</h2>
                     </Menu.Item>
                     <Menu.Item as="div" className="item">
-                      <h2>Book</h2>
+                      <h2 id="currnet">Book</h2>
                     </Menu.Item>
                     <Menu.Item as="div" className="item">
                       <button className="button">Cart</button>

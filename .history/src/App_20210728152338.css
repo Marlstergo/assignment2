@@ -1,7 +1,6 @@
 .container {
   height: 100vh;
   width: 100%;
-  overflow: hidden;
   /* padding-left: 1.5rem;
   padding-right: 1.5rem; */
 }
@@ -99,9 +98,8 @@
 }
 
 .row {
-  display: flex;
-  overflow-x: scroll;
-  padding: 40px 0;
+  display: inline-flex;
+  overflow: scroll;
 }
 
 .hero {
@@ -137,7 +135,7 @@ h1 {
   margin-right: 20px;
   /* background-color: aqua; */
   border-radius: 20px;
-  height: 230px;
+  height: 250px;
   width: 160px;
   box-shadow: 1px 2px 24px rgb(158, 148, 148);
 }
@@ -174,13 +172,10 @@ img {
   text-decoration: underline;
   text-decoration: rgb(255, 78, 78);
 }
-.mobile-menu{
-  display:none;
-}
 
 @media screen and (max-width: 480px) {
   .main-view {
-    grid-column: span 9 / span 9;
+    grid-column: span 9 / span 93;
   }
   .sidebar {
     background-color: lightgreen;
@@ -188,7 +183,6 @@ img {
   }
   .hero {
     display: block;
-    padding: 0 40px;
   }
   .paragraph {
     display: none;
@@ -196,58 +190,13 @@ img {
   .row {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 30px 10px;
-    padding: 20px 20px;
+    gap: 10px;
   }
-
-  .paragraph2{
-    padding: 0 40px ;
-    margin-top: 15px;
-  }
-  .taco{
-    display: none;
-  }
-  .cont{
-    width: 100vw;
-  }
-  .mobile-menu{
-    display:flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0px;
-  }
-}
-.shop{
-  margin: 0 20px;
-  color: red;
-
-
-}
-.menu{
-  margin: 0 20px;
-  color: red;
-
 }
 @media screen and (min-width: 481px) {
   .sidebar{
     display: block;
   }
-  .cont{
-    display: none;
-  }
-  .paragraph2{
-    display: none;
-  }
 }
 
 
-.menu-items{
-  position: absolute;
-  bottom: 0px;
-  background-color: white;
-  width: 60vw;
-  padding-left: 30px;
-  padding-bottom: 40px;
-  height: 80vh;
-}

@@ -220,14 +220,10 @@ img {
 }
 .shop{
   margin: 0 20px;
-  color: red;
-
 
 }
 .menu{
   margin: 0 20px;
-  color: red;
-
 }
 @media screen and (min-width: 481px) {
   .sidebar{
@@ -242,12 +238,3 @@ img {
 }
 
 
-.menu-items{
-  position: absolute;
-  bottom: 0px;
-  background-color: white;
-  width: 60vw;
-  padding-left: 30px;
-  padding-bottom: 40px;
-  height: 80vh;
-}

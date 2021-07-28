@@ -38,19 +38,19 @@ function App() {
                       <h2 id="currnet">About</h2>
                     </Menu.Item>
                     <Menu.Item as="div" className="item">
-                      <h2 >Services</h2>
+                      <h2 id="currnet">Services</h2>
                     </Menu.Item>
                     <Menu.Item as="div" className="item">
-                      <h2 >Cousine</h2>
+                      <h2 id="currnet">Cousine</h2>
                     </Menu.Item>
                     <Menu.Item as="div" className="item">
-                      <h2 >Gallery</h2>
+                      <h2 id="currnet">Gallery</h2>
                     </Menu.Item>
                     <Menu.Item as="div" className="item">
-                      <h2>Contact</h2>
+                      <h2 id="currnet">Contact</h2>
                     </Menu.Item>
                     <Menu.Item as="div" className="item">
-                      <h2>Book</h2>
+                      <h2 id="currnet">Book</h2>
                     </Menu.Item>
                     <Menu.Item as="div" className="item">
                       <button className="button">Cart</button>
