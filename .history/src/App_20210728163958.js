@@ -10,7 +10,7 @@ import { MenuAlt2, ShoppingCart, X } from "heroicons-react";
 
 function App() {
   return (
-    <div className="">
+    <div className="sidebar">
       <div className="full">
         <div className="cont">
           <div className="mobile-menu">
@@ -103,7 +103,7 @@ function App() {
             </div>
           </div>
           {/* list of foods */}
-          <div className="row sidebars">
+          <div className="row ">
             <div className="cell">
               <div className="imagediv">
                 {/* image */}

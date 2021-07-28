@@ -103,7 +103,7 @@ function App() {
             </div>
           </div>
           {/* list of foods */}
-          <div className="row sidebars">
+          <div className="row sidebar">
             <div className="cell">
               <div className="imagediv">
                 {/* image */}
